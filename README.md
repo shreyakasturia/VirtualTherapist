@@ -1,5 +1,7 @@
 # VirtualTherapist
 
+<img width="1439" alt="VT" src="https://github.com/shreyakasturia/VirtualTherapist/assets/70463887/c29010f3-462c-44a5-8a32-27845e7d79ec">
+
 ## Overview
 This project aims to create a virtual therapist application that can engage in meaningful conversations with users and provide support for their emotional well-being. The application is built using Dialogflow for natural language processing, HTML/CSS/JS for the user interface, and Synthesia for generating realistic video avatars to enhance the user experience.
 
