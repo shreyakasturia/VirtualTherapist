@@ -17,28 +17,19 @@ dfMessenger.addEventListener('df-response-received', function (event) {
     changeVid(videoURL);
 });
 
+
+function playVideo() {
+  var myVideo = document.getElementById("myVideo");
+  myVideo.play()
+}
+
 function switchToIdle() {
   var myVideo = document.getElementById("myVideo");
   var idleVideo = document.getElementById("idleVideo");
 
+  myVideo.pause(); 
   myVideo.style.display = "none";
   idleVideo.style.display = "block";
 
-  myVideo.
   idleVideo.play();
-}
-
-
-function changeVid(URL) {
-    var vid = document.getElementById("myVideo");
-    vid.src = URL;
-    vid.load();
-    vid.play();
-    document.getElementById("myVideo").style.opacity = "1";
-    document.getElementById("idleVideo").style.opacity = "0";
-}
-
-function redirectPage() {
-    var url = "https://ufl.qualtrics.com/jfe/form/SV_ey59qVuNUXXcKh0"
-    window.open(url);
 }
