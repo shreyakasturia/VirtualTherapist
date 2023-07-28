@@ -17,7 +17,7 @@ dfMessenger.addEventListener('df-response-received', function (event) {
     changeVid(videoURL);
 });
 
-function switchIdle() {
+function switchToIdle() {
     var em = document.getElementById("myVideo");
     var temp = window.getComputedStyle(em).getPropertyValue("opacity");
 
