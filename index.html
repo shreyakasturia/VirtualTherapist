@@ -22,10 +22,16 @@
     <video id="idleVideo" controls autoplay loop style="display: none;">
       <source src="videos/idle.mp4" type="video/mp4">
     </video>
+
+
 <!-- 
     <input type="text" id="user-input" placeholder="Ask your question..."> -->
   </div>
+  <div class="button-container">
+    <button id="endInteraction" onclick="redirectPage()">End Interaction</button>
+</div>
   <div class="chat-container">
+
     <df-messenger
       intent="WELCOME"
       chat-title="Shreya"
