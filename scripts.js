@@ -18,18 +18,14 @@ dfMessenger.addEventListener('df-response-received', function (event) {
 });
 
 function switchToIdle() {
-    var em = document.getElementById("myVideo");
-    var temp = window.getComputedStyle(em).getPropertyValue("opacity");
-
-    if (temp == "1") {
-        document.getElementById("idleVideo").style.opacity = "1";
-        document.getElementById("myVideo").style.opacity = "0";
-    }
-
-    if (temp == "0") {
-        document.getElementById("myVideo").style.opacity = "1";
-        document.getElementById("idleVideo").style.opacity = "0";
-    }
+    var myVideo = document.getElementById("myVideo");
+    var idleVideo = document.getElementById("idleVideo");
+  
+    myVideo.pause();
+    myVideo.currentTime = 0;
+    myVideo.style.display = "none";
+    idleVideo.style.display = "block";
+    idleVideo.play();
 }
 
 function changeVid(URL) {
