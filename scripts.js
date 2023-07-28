@@ -21,10 +21,11 @@ function switchToIdle() {
     var myVideo = document.getElementById("myVideo");
     var idleVideo = document.getElementById("idleVideo");
   
-    myVideo.pause();
-    myVideo.currentTime = 0;
+    // Hide the main video and show the idle video
     myVideo.style.display = "none";
     idleVideo.style.display = "block";
+
+    // Play the idle video
     idleVideo.play();
 }
 
