@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Virtual Therapist</title> 
+  <link rel="stylesheet" href="styles.css">
+</head> -->
+<header>
+  <script type="text/javascript" src="./jquery.js"></script>
+  <script type="text/javascript" src="./scriptS.js" defer></script>
+  <link rel="stylesheet" href="./styleS.css">
+</header>
+<body>
+  <div class="container">
+    <!-- <h1>Virtual Therapist</h1> -->
+
+    <video id="myVideo" controls autoplay onended="switchToIdle()">
+      <source src="videos/Default_Welcome_Intent.mp4" type="video/mp4">
+    </video>
+
+    <video id="idleVideo" controls autoplay loop style="display: none;">
+      <source src="videos/idle.mp4" type="video/mp4">
+    </video>
+<!-- 
+    <input type="text" id="user-input" placeholder="Ask your question..."> -->
+  </div>
+  <div class="chat-container">
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Shreya"
+      agent-id="fc6167ec-7ed2-4bd3-ab71-be6d293f79ca"
+      language-code="en"
+    ></df-messenger>
+  <!-- <div class="container">
+      <Box style="font-weight: bold; margin-top: 5px; font-size: 24px; padding-left: 5vw;">About Mental Health</Box>
+      <p style="padding-left: 5vw;">
+          Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act, and helps determine how we handle stress, relate to others, and make choices.</p>
+          <p style="padding-left: 5vw;">Mental health is important at every stage of life, from childhood and adolescence through adulthood. Over the course of your life, if you experience mental health problems, your thinking, mood, and behavior could be affected.</p>
+          <p style="padding-left: 5vw;">Virtual therapist currently talks about:</p>
+          <ul style="padding-left: 5vw;">
+              <li>Anxiety Management</li>
+              <li>Goal Setting</li>
+              <li>Relationship Advice</li>
+              <li>Resilience Building</li>
+              <li>Self-care Management</li>
+              <li>Stress Management</li>
+          </ul>
+  </div> -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script src="scriptS.js"></script>
+  </div>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Therapist</title>
+  <script type="text/javascript" src="./jquery.js"></script>
+  <script type="text/javascript" src="./scripts.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Virtual Therapist</h1>
+
+    <video autoplay id="myVideo" autoplay poster="poster.png" onended="switchIdle()">
+      <source src="Videos/Default_Welcome_Intent.mp4"
+          type="video/mp4">
+      Your browser does not support HTML5 video.
+  </video>
+    <input type="text" id="user-input" placeholder="Ask your question...">
+    <button onclick="playVideo()">Submit</button> </br>
+    <button id="endInteraction" onclick="redirectPage()">End Interaction</button>
+    <div class="chat-container">
+      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+      <df-messenger
+        chat-title="Shreya"
+        agent-id="fc6167ec-7ed2-4bd3-ab71-be6d293f79ca"
+        language-code="en"
+      ></df-messenger>
+    </div>
+    <div class="grid-item">
+        <Box style="font-weight: bold; margin-top: 5px; font-size: 24px; padding-left: 5vw;">About Mental Health</Box>
+        <p style="padding-left: 5vw;">
+            Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act, and helps determine how we handle stress, relate to others, and make choices.</p>
+            <p style="padding-left: 5vw;">Mental health is important at every stage of life, from childhood and adolescence through adulthood. Over the course of your life, if you experience mental health problems, your thinking, mood, and behavior could be affected.</p>
+            <p style="padding-left: 5vw;">Virtual therapist currently talks about:</p>
+            <ul style="padding-left: 5vw;">
+                <li>Anxiety Management</li>
+                <li>Goal Setting</li>
+                <li>Relationship Advice</li>
+                <li>Resilience Building</li>
+                <li>Self-care Management</li>
+                <li>Stress Management</li>
+            </ul>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html> -->
