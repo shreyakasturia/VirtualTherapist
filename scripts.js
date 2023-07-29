@@ -24,7 +24,7 @@ function switchToIdle() {
   myVideo.muted = true;
   myVideo.style.display = "none";
   idleVideo.style.display = "block";
-
+  document.getElementById("idleVideo").style.opacity = "0";
   idleVideo.play();
 }
 
@@ -33,6 +33,7 @@ function changeVid(URL) {
     var vid = document.getElementById("myVideo");
     vid.src = URL;
     vid.style.display = "block";
+    vid.muted = false;
     vid.load();
     vid.play();
     document.getElementById("myVideo").style.opacity = "1";
