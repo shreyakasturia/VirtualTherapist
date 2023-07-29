@@ -24,7 +24,7 @@ function switchToIdle() {
   myVideo.muted = true;
   myVideo.style.display = "none";
   idleVideo.style.display = "block";
-  document.getElementById("idleVideo").style.opacity = "0";
+  document.getElementById("idleVideo").style.opacity = "1";
   idleVideo.play();
 }
 
