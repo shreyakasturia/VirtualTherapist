@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="./styles.css">
   </header>
   <body>
-    <div class="container">  
+    <div class="container"> 
+      
+    <video id="myVideo" controls onended="switchToIdle()">
+      <source src="videos/Default_Welcome_Intent.mp4" type="video/mp4">
+    </video>
+     
       <video id="idleVideo" controls autoplay loop>
         <source src="videos/idle.mp4" type="video/mp4">
       </video>
