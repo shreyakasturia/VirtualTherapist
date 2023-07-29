@@ -18,15 +18,14 @@ dfMessenger.addEventListener('df-response-received', function (event) {
 });
 
 function switchToIdle() {
-    var myVideo = document.getElementById("myVideo");
-    var idleVideo = document.getElementById("idleVideo");
-  
-    myVideo.style.display = "none";
-    myVideo.muted = true;
-    idleVideo.style.display = "block";
-  
-    idleVideo.play();
-  }
+  var myVideo = document.getElementById("myVideo");
+  var idleVideo = document.getElementById("idleVideo");
+
+  myVideo.style.display = "none";
+  myVideo.muted = true;
+  idleVideo.style.display = "block";
+
+  idleVideo.play();
 }
 
 

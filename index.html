@@ -1,35 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <header>
-    <script type="text/javascript" src="./jquery.js"></script>
-    <script type="text/javascript" src="./scripts.js" defer></script>
-    <link rel="stylesheet" href="./styles.css">
-  </header>
-  <body>
-    <div class="container"> 
-      
-      <video id="myVideo" controls autoplay onended="switchToIdle()">
-        <source src="videos/Default_Welcome_Intent.mp4" type="video/mp4">
-      </video>
-  
-      <video id="idleVideo" controls autoplay muted loop style="display: none;">
-        <source src="videos/idle.mp4" type="video/mp4">
-      </video>
+<header>
+  <script type="text/javascript" src="./jquery.js"></script>
+  <script type="text/javascript" src="./scriptS.js" defer></script>
+  <link rel="stylesheet" href="./styles.css">
+</header>
+<body>
+  <div class="container">
+    <video id="myVideo" controls autoplay onended="switchToIdle()">
+      <source src="videos/Default_Welcome_Intent.mp4" type="video/mp4">
+    </video>
+
+    <video id="idleVideo" controls autoplay muted loop style="display: none;">
+      <source src="videos/idle.mp4" type="video/mp4">
+    </video>
 
     <div class="button-container">
       <button id="endInteraction" onclick="redirectPage()">End Interaction</button>
   </div>
+  </div>
 
-    </div>
-    <div class="chat-container">
-      <df-messenger
-        intent="WELCOME"
-        chat-title="Shreya"
-        agent-id="fc6167ec-7ed2-4bd3-ab71-be6d293f79ca"
-        language-code="en"
-      ></df-messenger>
-      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-      <script src="scripts.js"></script>
-    </div>
-  </body>
-  </html>
+  <div class="chat-container">
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Shreya"
+      agent-id="fc6167ec-7ed2-4bd3-ab71-be6d293f79ca"
+      language-code="en"
+    ></df-messenger>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script src="scriptS.js"></script>
+  </div>
+</body>
+</html>
