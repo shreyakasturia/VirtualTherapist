@@ -34,8 +34,8 @@ function changeVid(URL) {
     vid.src = URL;
     vid.load();
     vid.play();
-    document.getElementById("myVideo").style.opacity = "1";
-    document.getElementById("idleVideo").style.opacity = "0";
+    document.getElementById("myVideo").style.opacity = "0";
+    document.getElementById("idleVideo").style.opacity = "1";
 }
 
 function redirectPage() {
