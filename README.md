@@ -40,3 +40,6 @@ Dialogflow: A natural language understanding platform that processes user input 
 HTML, CSS, JS: These web technologies are used to create the user interface for the virtual therapist.
 
 Synthesia: A cutting-edge AI video generation platform that brings the virtual therapist to life.
+
+Python: For generating Excel intents file, saving 90% of time compared to manually generating intents file.
+
