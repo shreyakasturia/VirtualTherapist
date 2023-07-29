@@ -20,9 +20,9 @@ dfMessenger.addEventListener('df-response-received', function (event) {
 function switchToIdle() {
   var myVideo = document.getElementById("myVideo");
   var idleVideo = document.getElementById("idleVideo");
-
-  myVideo.style.display = "none";
+  
   myVideo.muted = true;
+  myVideo.style.display = "none";
   idleVideo.style.display = "block";
 
   idleVideo.play();
@@ -32,10 +32,11 @@ function switchToIdle() {
 function changeVid(URL) {
     var vid = document.getElementById("myVideo");
     vid.src = URL;
+    vid.style.display = "block";
     vid.load();
     vid.play();
-    document.getElementById("myVideo").style.opacity = "0";
-    document.getElementById("idleVideo").style.opacity = "1";
+    document.getElementById("myVideo").style.opacity = "1";
+    document.getElementById("idleVideo").style.opacity = "0";
 }
 
 function redirectPage() {
