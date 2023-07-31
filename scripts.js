@@ -20,11 +20,10 @@ dfMessenger.addEventListener('df-response-received', function (event) {
 function switchToIdle() {
   var myVideo = document.getElementById("myVideo");
   var idleVideo = document.getElementById("idleVideo");
-  
-  myVideo.muted = true;
-  myVideo.style.display = "none";
   idleVideo.style.display = "block";
   document.getElementById("idleVideo").style.opacity = "1";
+  myVideo.muted = true;
+  myVideo.style.display = "none";
   idleVideo.play();
 }
 
