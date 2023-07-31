@@ -15,9 +15,31 @@ User Input Processing: Dialogflow processes user input to understand their emoti
 
 Customizable UI: The HTML/CSS/JS front-end allows for easy customization and integration with different applications.
 
+Topics trained:
+<ul>
+<li>Emotional Intelligence</li>
+<li>Mindful Eating</li>
+<li>Self care management</li>
+<li>Goal Setting</li>
+<li>Relationship Advice</li>
+<li>Boosting Self-Confidence</li>
+<li>Parenting Tips</li>
+<li>Positive Thinking</li>
+<li>Stress Management</li>
+<li>Conflict Resolution</li>
+<li>Coping with Change</li>
+<li>Resilience Building</li>
+<li>Dealing with Procrastination</li>
+<li>Anxiety Management</li>
+<li>Body Language and Communication</li>
+</ul>
+
 ## Technologies Used
 Dialogflow: A natural language understanding platform that processes user input and generates responses.
 
 HTML, CSS, JS: These web technologies are used to create the user interface for the virtual therapist.
 
 Synthesia: A cutting-edge AI video generation platform that brings the virtual therapist to life.
+
+Python: For generating Excel intents file, saving 90% of time compared to manually generating intents file.
+
